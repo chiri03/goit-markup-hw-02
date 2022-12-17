@@ -17,162 +17,166 @@
       href="https://fonts.googleapis.com/css2?family=Corinthia&family=Roboto:wght@400;700;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./style/style.css" />
   </head>
   <body>
-    <!--  -->
-    <div class="studio">
-      <!-- header section -->
-      <header class="header">
-        <p>
-          <a href="index.html"
-            ><span class="logo" style="color: rgba(33, 150, 243, 1)">Web</span
-            >Studio</a
+    <!-- header section -->
+    <header>
+      <div class="top">
+        <p class="logo">
+          <a class="head-logo" href="index.html"
+            >Web<span class="logo-web">Studio</span></a
           >
         </p>
 
         <!-- Navigation to other pages -->
-        <nav>
+        <nav class="navigation-bar">
           <ul>
-            <li><a href="index.html">Studio</a></li>
-            <li><a href="#portofoliu">Portofolio</a></li>
-            <li><a href="#contacte">Contacte</a></li>
+            <li class="nv-items"><a href="index.html">Studio</a></li>
+            <li class="nv-items"><a href="portofolio.html">Portofolio</a></li>
+            <li class="nv-items"><a href="#contacte">Contacte</a></li>
           </ul>
         </nav>
         <!-- contact section -->
 
         <ul class="contacts">
-          <li>
-            <a class="contact-section-value" href="tel:+111111111111"
-              >+38096 111 11 11</a
-            >
-          </li>
-          <li>
+          <li class="nv-items">
             <a class="contact-section-value" href="info@devstudio.com"
               >info@devstudio.com</a
             >
           </li>
+
+          <li class="nv-items">
+            <a class="contact-section-value" href="tel:+111111111111"
+              >+38096 111 11 11</a
+            >
+          </li>
         </ul>
-      </header>
+      </div>
+    </header>
 
-      <!-- main section -->
-      <main>
-        <div class="big-section">
-          <h1>
-            EFFECTIVE SOLUTIONS FOR <br />
-            YOUR BUSINESS
-          </h1>
-          <button class="button">Request our service</button>
-        </div>
+    <!-- main section -->
+    <main>
+      <div class="big-section">
+        <h1>
+          EFFECTIVE SOLUTIONS FOR <br />
+          YOUR BUSINESS
+        </h1>
+        <button class="button">Request our service</button>
+      </div>
 
-        <!-- section skills -->
-        <section>
-          <div class="detail-skills">
-            <h3>Atenție la detalii</h3>
-            <p>
+      <!-- section skills -->
+      <section class="skilll-section">
+        <ul class="detail-skills">
+          <li>
+            <h3 class="skills">Atenție la detalii</h3>
+            <p class="skills-description">
               Considerații ideologice precum și începutul unor activități
               zilnice privind formarea unei poziții.
             </p>
-          </div>
-          <div class="punctuality">
-            <h3>Punctualitate</h3>
-            <p>
+          </li>
+          <li>
+            <h3 class="skills">Punctualitate</h3>
+            <p class="skills-description">
               Sarcina organizației, în special ce implică cadrul și locul de
               formare a personalului.
             </p>
-          </div>
+          </li>
 
-          <div class="planification">
-            <h3>Planificare</h3>
-            <p>
+          <li>
+            <h3 class="skills">Planificare</h3>
+            <p class="skills-description">
               În mod similar, consultarea cu un activ larg este în mare parte
               condiționată.
             </p>
-          </div>
-
-          <div class="modern-tehnology">
-            <h3>Tehnologii moderne</h3>
-            <p>
+          </li>
+          <li>
+            <h3 class="skills">Tehnologii moderne</h3>
+            <p class="skills-description">
               Importanța acestor probleme este atât de evidentă, la fel ca și
               implementarea obiectivelor planificate.
             </p>
-          </div>
-        </section>
+          </li>
+        </ul>
+      </section>
 
-        <!-- section What to do -->
-        <section>
-          <h2>What we do</h2>
-          <ul>
-            <li>
-              <img
-                src="./images/box1.jpg"
-                style="width: 370px; height: 294px"
-                alt="Coding activities"
-              />
-            </li>
-            <li>
-              <img
-                src="./images/box2.jpg"
-                style="width: 370px; height: 294px"
-                alt="choosing telephome frame"
-              />
-            </li>
-            <li>
-              <img
-                src="./images/box3.jpg"
-                style="width: 370px; height: 294px"
-                alt="work with colors"
-              />
-            </li>
-          </ul>
-        </section>
-        <!-- our team section -->
-        <section>
-          <h2>Our Team</h2>
-          <div class="team">
+      <!-- section What to do -->
+      <section class="work-section">
+        <h2 class="workExemple">What we do</h2>
+        <ul>
+          <li>
             <img
-              src="./images/photoCristopher.jpg"
-              style="width: 270px; height: 260px"
-              alt="Cristopher Photo"
+              src="./images/box1.jpg"
+              style="width: 370px; height: 294px"
+              alt="Coding activities"
             />
-            <h3>Christopher Walker</h3>
-            <p>Product Designer</p>
-          </div>
+          </li>
+          <li>
+            <img
+              src="./images/box2.jpg"
+              style="width: 370px; height: 294px"
+              alt="choosing telephome frame"
+            />
+          </li>
+          <li>
+            <img
+              src="./images/box3.jpg"
+              style="width: 370px; height: 294px"
+              alt="work with colors"
+            />
+          </li>
+        </ul>
+      </section>
 
-          <div class="team">
-            <img
-              src="./images/photoKylie.jpg"
-              style="width: 270px; height: 260px"
-              alt="Kylie Photo"
-            />
-            <h3>Kylie Evans</h3>
-            <p>Frontend Developer</p>
-          </div>
+      <!-- our team section -->
+      <section class="team-section">
+        <h2 class="our-team">Our Team</h2>
+        <div class="team">
+          <img
+            src="./images/photoCristopher.jpg"
+            style="width: 270px; height: 260px"
+            alt="Cristopher Photo"
+          />
+          <h3>Christopher Walker</h3>
+          <p>Product Designer</p>
+        </div>
 
-          <div class="team">
-            <img
-              src="./images/photoRyan.jpg"
-              style="width: 270px; height: 260px"
-              alt="Ryan Photo"
-            />
-            <h3>Ryan Harris</h3>
-            <p>Marketing</p>
-          </div>
+        <div class="team">
+          <img
+            src="./images/photoKylie.jpg"
+            style="width: 270px; height: 260px"
+            alt="Kylie Photo"
+          />
+          <h3>Kylie Evans</h3>
+          <p>Frontend Developer</p>
+        </div>
 
-          <div class="team">
-            <img
-              src="./images/photoTyler.jpg"
-              style="width: 270px; height: 260px"
-              alt="Tyler Photo"
-            />
-            <h3>Tyler Moore</h3>
-            <p>UI Designer</p>
-          </div>
-        </section>
-      </main>
-      <!-- footer section -->
-      <footer>
-        <p><span class="logo">Web</span>Studio</p>
-        <address class="contacts">
+        <div class="team">
+          <img
+            src="./images/photoRyan.jpg"
+            style="width: 270px; height: 260px"
+            alt="Ryan Photo"
+          />
+          <h3>Ryan Harris</h3>
+          <p>Marketing</p>
+        </div>
+
+        <div class="team">
+          <img
+            src="./images/photoTyler.jpg"
+            style="width: 270px; height: 260px"
+            alt="Tyler Photo"
+          />
+          <h3>Tyler Moore</h3>
+          <p>UI Designer</p>
+        </div>
+      </section>
+    </main>
+    <!-- footer section -->
+    <footer class="subsol">
+        <p class="footer-logo">Web<span class="logo-web">Studio</span></p>
+        </p>
+        <address class="footer-contacts">
           <ul>
             <li><p>695 Park Ave, NY 10065, USA</p></li>
             <li><a href="info@devstudio.com"> info@devstudio.com</a></li>
@@ -180,6 +184,6 @@
           </ul>
         </address>
       </footer>
-    </div>
+    </div> 
   </body>
 </html>
