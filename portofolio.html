@@ -17,48 +17,167 @@
       href="https://fonts.googleapis.com/css2?family=Corinthia&family=Roboto:wght@400;700;900&display=swap"
       rel="stylesheet"
     />
+
+    <link rel="stylesheet" href="./style/style.css" />
   </head>
   <body>
     <!-- header section -->
-    <header class="header">
-      <p>
-        <a href="index.html"><span class="logo">Web</span>Studio</a>
-      </p>
+    <header>
+      <div class="top">
+        <p class="logo">
+          <a class="head-logo" href="index.html"
+            >Web<span class="logo-web">Studio</span></a
+          >
+        </p>
 
-      <!-- Navigation to other pages -->
-      <nav>
-        <ul>
-          <li><a href="index.html">Studio</a></li>
-          <li><a href="#portofoliu">Portofolio</a></li>
-          <li><a href="#contacte">Contacte</a></li>
+        <!-- Navigation to other pages -->
+        <nav class="navigation-bar">
+          <ul>
+            <li><a class="nv-items" href="index.html">Studio</a></li>
+            <li><a class="nv-items" href="portofolio.html">Portofolio</a></li>
+            <li><a class="nv-items" href="#contacte">Contacte</a></li>
+          </ul>
+        </nav>
+        <!-- contact section -->
+
+        <ul class="contacts">
+          <li>
+            <a class="contact-section-value" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+
+          <li>
+            <a class="contact-section-value" href="tel:+111111111111"
+              >+38096 111 11 11</a
+            >
+          </li>
         </ul>
-      </nav>
-      <!-- contact section -->
-
-      <ul class="contacts">
-        <li>
-          <a class="contact-section-value" href="tel:+111111111111"
-            >+38096 111 11 11</a
-          >
-        </li>
-        <li>
-          <a class="contact-section-value" href="info@devstudio.com"
-            >info@devstudio.com</a
-          >
-        </li>
-      </ul>
+      </div>
     </header>
 
     <!-- main section -->
-    <main></main>
+    <main>
+      <section>
+        <ul class="filters">
+          <li class="filter-name">All</li>
+          <li class="filter-name">Web-sites</li>
+          <li class="filter-name">Apps</li>
+          <li class="filter-name">Design</li>
+          <li class="filter-name">Marketing</li>
+        </ul>
+      </section>
+
+      <section>
+        <div class="container-img">
+          <div class="container-img-file">
+            <img class="image" src="./images/imgtech.jpg" alt="notebook jpg" />
+            <h3 class="container-img-file-head">Technoduck</h3>
+            <p class="container-img-file-paragraf">Web-site</p>
+          </div>
+
+          <div class="container-img-file">
+            <img
+              class="image"
+              src="./images/imgposter.jpg"
+              alt="bascketball payers jpg"
+            />
+            <h3 class="container-img-file-head">
+              Poster New Orlean vs Golden Star
+            </h3>
+            <p class="container-img-file-paragraf">Design</p>
+          </div>
+
+          <div class="container-img-file">
+            <img
+              class="image"
+              src="./images/imgseafood.jpg"
+              alt="seafood restaurant poster jpg"
+            />
+            <h3 class="container-img-file-head">Seafood Restaurant</h3>
+            <p class="container-img-file-paragraf">Apps</p>
+          </div>
+
+          <div class="container-img-file">
+            <img
+              class="image"
+              src="./images/imgprime.jpg"
+              alt="headphone jpg"
+            />
+            <h3 class="container-img-file-head">Project Prime</h3>
+            <p class="container-img-file-paragraf">Marketing</p>
+          </div>
+
+          <div class="container-img-file">
+            <img
+              class="image"
+              src="./images/imgboxex.jpg"
+              alt="two boxes jpg"
+            />
+            <h3 class="container-img-file-head">Project Boxes</h3>
+            <p class="container-img-file-paragraf">Apps</p>
+          </div>
+
+          <div class="container-img-file">
+            <img
+              class="image"
+              src="./images/imginspiration.jpg"
+              alt="one big monitor jpg"
+            />
+            <h3 class="container-img-file-head">Inspiration has no Borders</h3>
+            <p class="container-img-file-paragraf">Web-site</p>
+          </div>
+
+          <div class="container-img-file">
+            <img
+              class="image"
+              src="./images/imglimited.jpg"
+              alt="open book jpg"
+            />
+
+            <h3 class="container-img-file-head">Limited Edition</h3>
+            <p class="container-img-file-paragraf">Design</p>
+          </div>
+
+          <div class="container-img-file">
+            <img class="image" src="./images/imglab.jpg" alt="label jpg" />
+            <h3 class="container-img-file-head">Project LAB</h3>
+            <p class="container-img-file-paragraf">Marketing</p>
+          </div>
+
+          <div class="container-img-file">
+            <img
+              class="image"
+              src="./images/imggrowing.jpg"
+              alt="working man jpg"
+            />
+            <h3 class="container-img-file-head">Growing Business</h3>
+            <p class="container-img-file-paragraf">Apps</p>
+          </div>
+        </div>
+      </section>
+    </main>
     <!-- footer section -->
-    <footer>
-      <p><span class="logo">Web</span>Studio</p>
-      <address class="contacts">
-        <ul>
-          <li><p>695 Park Ave, NY 10065, USA</p></li>
-          <li><a href="info@devstudio.com"> info@devstudio.com</a></li>
-          <li><a href="tel:+111111111111">+1 212-772-4150 </a></li>
+    <footer class="subsol">
+      <p class="footer-logo">Web<span class="footer-logo-web">Studio</span></p>
+
+      <address>
+        <ul class="footer-contacts">
+          <li>
+            <p class="nv-items-footer footerAddres">
+              695 Park Ave, NY 10065, USA
+            </p>
+          </li>
+          <li>
+            <a class="nv-items-footer" href="info@devstudio.com">
+              info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <a class="nv-items-footer" href="tel:+111111111111"
+              >+1 212-772-4150
+            </a>
+          </li>
         </ul>
       </address>
     </footer>
