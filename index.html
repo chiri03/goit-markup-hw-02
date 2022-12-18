@@ -14,7 +14,7 @@
       rel="stylesheet"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Corinthia&family=Roboto:wght@400;700;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:wght@700;900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./style/style.css" />
@@ -32,21 +32,21 @@
         <!-- Navigation to other pages -->
         <nav class="navigation-bar">
           <ul>
-            <li class="nv-items"><a href="index.html">Studio</a></li>
-            <li class="nv-items"><a href="portofolio.html">Portofolio</a></li>
-            <li class="nv-items"><a href="#contacte">Contacte</a></li>
+            <li><a class="nv-items" href="index.html">Studio</a></li>
+            <li><a class="nv-items" href="portofolio.html">Portofolio</a></li>
+            <li><a class="nv-items" href="#contacte">Contacte</a></li>
           </ul>
         </nav>
         <!-- contact section -->
 
         <ul class="contacts">
-          <li class="nv-items">
-            <a class="contact-section-value" href="info@devstudio.com"
+          <li>
+            <a class="contact-section-value" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
             >
           </li>
 
-          <li class="nv-items">
+          <li>
             <a class="contact-section-value" href="tel:+111111111111"
               >+38096 111 11 11</a
             >
@@ -62,11 +62,13 @@
           EFFECTIVE SOLUTIONS FOR <br />
           YOUR BUSINESS
         </h1>
-        <button class="button">Request our service</button>
+        <div class="center">
+          <button class="button">Request our service</button>
+        </div>
       </div>
 
       <!-- section skills -->
-      <section class="skilll-section">
+      <section class="skill-section">
         <ul class="detail-skills">
           <li>
             <h3 class="skills">Atenție la detalii</h3>
@@ -100,30 +102,19 @@
         </ul>
       </section>
 
-      <!-- section What to do -->
+      <!-- section What we to do -->
       <section class="work-section">
         <h2 class="workExemple">What we do</h2>
-        <ul>
-          <li>
-            <img
-              src="./images/box1.jpg"
-              style="width: 370px; height: 294px"
-              alt="Coding activities"
-            />
+        <ul class="container">
+          <li class="box box1">
+            <img src="./images/box1.jpg" alt="Coding activities" />
           </li>
-          <li>
-            <img
-              src="./images/box2.jpg"
-              style="width: 370px; height: 294px"
-              alt="choosing telephome frame"
-            />
+          <li class="box box2">
+            <img src="./images/box2.jpg" alt="choosing telephome frame" />
           </li>
-          <li>
-            <img
-              src="./images/box3.jpg"
-              style="width: 370px; height: 294px"
-              alt="work with colors"
-            />
+
+          <li class="box box3">
+            <img src="./images/box3.jpg" alt="work with colors" />
           </li>
         </ul>
       </section>
@@ -131,59 +122,62 @@
       <!-- our team section -->
       <section class="team-section">
         <h2 class="our-team">Our Team</h2>
-        <div class="team">
-          <img
-            src="./images/photoCristopher.jpg"
-            style="width: 270px; height: 260px"
-            alt="Cristopher Photo"
-          />
-          <h3>Christopher Walker</h3>
-          <p>Product Designer</p>
-        </div>
+        <div id="totlaTeam">
+          <div class="team teamCris">
+            <img
+              class="photo"
+              src="./images/photoCristopher.jpg"
+              alt="Cristopher Photo"
+            />
+            <h3 class="photo-container-name">Christopher Walker</h3>
+            <p class="photo-container-post">Product Designer</p>
+          </div>
 
-        <div class="team">
-          <img
-            src="./images/photoKylie.jpg"
-            style="width: 270px; height: 260px"
-            alt="Kylie Photo"
-          />
-          <h3>Kylie Evans</h3>
-          <p>Frontend Developer</p>
-        </div>
+          <div class="team">
+            <img
+              class="photo"
+              src="./images/photoKylie.jpg"
+              alt="Kylie Photo"
+            />
+              <h3 class="photo-container-name">Kylie Evans</h3>
+              <p class="photo-container-post">Frontend Developer</p>
+            </div>
+          
 
-        <div class="team">
-          <img
-            src="./images/photoRyan.jpg"
-            style="width: 270px; height: 260px"
-            alt="Ryan Photo"
-          />
-          <h3>Ryan Harris</h3>
-          <p>Marketing</p>
-        </div>
+          <div class="team">
+            <img class="photo" src="./images/photoRyan.jpg" alt="Ryan Photo" />
+              <h3 class="photo-container-name">Ryan Harris</h3>
+              <p class="photo-container-post">Marketing</p>
+            </div>
+          
 
-        <div class="team">
-          <img
-            src="./images/photoTyler.jpg"
-            style="width: 270px; height: 260px"
-            alt="Tyler Photo"
-          />
-          <h3>Tyler Moore</h3>
-          <p>UI Designer</p>
+          <div class="team">
+            <img
+              class="photo"
+              src="./images/photoTyler.jpg"
+              alt="Tyler Photo"
+            />
+              <h3 class="photo-container-name">Tyler Moore</h3>
+              <p class="photo-container-post">UI Designer</p>
+            </div>
+          
+          </div>
+          </div>
+        </div>
         </div>
       </section>
     </main>
     <!-- footer section -->
     <footer class="subsol">
-        <p class="footer-logo">Web<span class="logo-web">Studio</span></p>
-        </p>
-        <address class="footer-contacts">
-          <ul>
-            <li><p>695 Park Ave, NY 10065, USA</p></li>
-            <li><a href="info@devstudio.com"> info@devstudio.com</a></li>
-            <li><a href="tel:+111111111111">+1 212-772-4150 </a></li>
-          </ul>
-        </address>
-      </footer>
-    </div> 
+      <p class="footer-logo">Web<span class="footer-logo-web">Studio</span></p>
+
+      <address >
+        <ul class="footer-contacts">
+          <li><p class="nv-items-footer footerAddres">695 Park Ave, NY 10065, USA</p></li>
+          <li><a class="nv-items-footer" href="info@devstudio.com"> info@devstudio.com</a></li>
+          <li><a class="nv-items-footer" href="tel:+111111111111">+1 212-772-4150 </a></li>
+        </ul>
+      </address>
+    </footer>
   </body>
 </html>

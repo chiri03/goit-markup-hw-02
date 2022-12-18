@@ -1,26 +1,29 @@
 html,
 body {
-  height: 100%;
   margin: 0;
-
-  background: #9f9999;
+  padding: 0;
+  top: 0;
+  position: relative;
+  width: 1600px;
+  height: 2348px;
+  font-family: "Roboto", sans-serif;
+  background: #ffffff;
 }
 
 .top {
   position: absolute;
-  width: 100%;
+  width: 1600px;
   height: 80px;
-  background: #ffffff;
-  margin: 0;
-  padding: 0;
+  top: 0px;
+  background-color: #ffffff;
 }
 
 .logo {
   position: absolute;
   width: 145px;
-  height: 31px;
-  left: 216px;
-  top: 24px;
+  line-height: 31px;
+  left: 215px;
+  top: 12px;
   bottom: 25px;
 
   font-family: "Raleway";
@@ -50,7 +53,7 @@ ul {
   position: relative;
   width: 58px;
   height: 16px;
-  left: 454px;
+  left: 400px;
   top: 32px;
   bottom: 32px;
   right: 385px;
@@ -70,17 +73,25 @@ ul {
 .navigation-bar li a {
   color: #212121;
   text-decoration: none;
-  padding: 50px;
+}
+
+.nv-items {
+  margin-left: 50px;
+}
+.nv-items:hover,
+.nv-items:focus,
+.nv-items:active {
+  color: rgba(33, 150, 243, 1);
 }
 
 .contacts {
   position: absolute;
   height: 16px;
   width: 500px;
-  left: 1272px;
+  left: 1096px;
   top: 32px;
   bottom: 32px;
-  right: 216px;
+  right: 227px;
 
   font-family: "Roboto";
   font-style: normal;
@@ -105,24 +116,29 @@ ul.contacts {
   padding: 40px;
 }
 
-/* maiin section */
+.contact-section-value:hover,
+.contact-section-value:focus,
+.contact-section-value:active {
+  color: rgba(33, 150, 243, 1);
+}
+
+/* main section */
 
 .big-section {
   position: absolute;
-  width: 100%;
+  width: 1600px;
   height: 600px;
   left: 0px;
   top: 80px;
+
   background: #2f303a;
-  margin: auto;
-  padding: auto;
 }
 
 .big-section h1 {
   position: relative;
-  width: 696px;
   height: 120px;
-  left: 452px;
+  left: 50%;
+  transform: translate(-50%, -50%);
   top: 200px;
   bottom: 280px;
 
@@ -141,10 +157,11 @@ ul.contacts {
 
 .button {
   position: absolute;
-  width: 200px;
   height: 50px;
-  left: 700px;
   top: 434px;
+
+  left: 50%;
+  transform: translate(-50%, -50%);
 
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -165,15 +182,22 @@ ul.contacts {
   color: #ffffff;
 }
 
-/* ection skills */
+.button:hover,
+.button:focus,
+.button:active {
+  border: 5px solid rgba(33, 150, 243, 1);
+  background: #f5f4fa;
+  color: #2196f3;
+}
 
-.skilll-section {
+/* section skills */
+
+.skill-section {
   position: absolute;
   width: 1170px;
   height: 101px;
   left: 215px;
   top: 774px;
-  display: flex;
 }
 
 ul.detail-skills {
@@ -224,10 +248,10 @@ ul.detail-skills {
 }
 
 .workExemple {
+  position: absolute;
+  width: 200px;
   height: 42px;
-  left: 701px;
-  top: 969px;
-
+  left: 515px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
@@ -239,24 +263,50 @@ ul.detail-skills {
   color: #212121;
 }
 
-.work-section ul {
+.container {
+  position: relative;
+  width: 1170px;
+  height: 386px;
+  top: 50px;
   display: flex;
 }
 
-.work-section ul li {
+.container li {
+  display: inline;
+}
+
+.box {
+  margin-top: 50px;
+  width: 370px;
+  height: 294px;
+}
+
+.box1 {
   padding-right: 30px;
 }
+.box2 {
+  padding-right: 30px;
+}
+.box2 {
+  padding-right: 30px;
+}
+
+.box:hover {
+  opacity: 0.7;
+}
+/* team section */
 
 .team-section {
   position: absolute;
   width: 1600px;
   height: 648px;
-  left: 215px;
   top: 1449px;
   background: #f5f4fa;
+  display: flexbox;
 }
 
 .our-team {
+  width: 1600px;
   height: 42px;
   left: 718px;
   top: 1543px;
@@ -272,9 +322,59 @@ ul.detail-skills {
   color: #212121;
 }
 
+#totalTeam {
+  position: absolute;
+  height: 368px;
+  width: 260px;
+  display: inline;
+  margin-left: 215px;
+  display: inline;
+}
+
 .team {
   display: inline-block;
+  height: 368px;
+  width: 260px;
+  background-color: #ffffff;
   margin: 15px;
+}
+
+.photo {
+  width: 260px;
+  height: 260px;
+  margin: 0;
+}
+
+.photo-container {
+  height: 108px;
+  width: 270px;
+  background-color: #ffffff;
+}
+
+.photo-container-name {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #212121;
+}
+
+.photo-container-post {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #757575;
 }
 
 .subsol {
@@ -292,6 +392,8 @@ ul.detail-skills {
   width: 145px;
   height: 31px;
   left: 215px;
+  top: 25px;
+  margin-bottom: 14px;
 
   font-family: "Raleway";
   font-style: normal;
@@ -302,11 +404,41 @@ ul.detail-skills {
   letter-spacing: 0.03em;
 
   color: #2196f3;
+  cursor: pointer;
+}
+
+.footer-logo-web {
+  color: rgba(255, 255, 255, 1);
 }
 
 .footer-contacts {
   position: absolute;
   width: 231px;
   height: 72px;
-  left: 215px;
+  left: 175px;
+  margin-top: 14px;
+}
+
+.nv-items-footer {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  bottom: 60px;
+  /* identical to box height, or 114% */
+
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.nv-items-footer:hover,
+.nv-items-footer:focus,
+.nv-items-footer:active {
+  color: rgba(33, 150, 243, 1);
+}
+
+.footerAddres {
+  color: #ffffff;
 }
